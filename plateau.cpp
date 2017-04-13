@@ -5,6 +5,7 @@
 #include "Pion.h"
 #include "Fou.h"
 #include "Roi.h"
+#include "Reine.h"
 
 using namespace std;
 
@@ -34,7 +35,7 @@ Plateau::Plateau()
 	echiquier[0][3] = new Reine(Blanc, 3, 0);
 	echiquier[7][3] = new Reine(Noir, 3, 7);
 	echiquier[0][4] = new Roi(Blanc, 4, 0);
-	echiquier[7][4] = new Roi(Noir, 4, 7)
+	echiquier[7][4] = new Roi(Noir, 4, 7);
 	
 
 	for (int x = 0; x < 8; x++)
