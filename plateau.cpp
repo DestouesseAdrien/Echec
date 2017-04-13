@@ -4,6 +4,7 @@
 #include "tour.h"
 #include "Pion.h"
 #include "Fou.h"
+#include "Roi.h"
 
 using namespace std;
 
