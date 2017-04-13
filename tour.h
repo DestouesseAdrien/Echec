@@ -1,7 +1,7 @@
 #pragma once
 #include "Piece.h"
 
-class Tour : public Piece // heritage
+class Tour : virtual public Piece // heritage
 {
 public:
 	Tour(Couleur C, int x, int y);

@@ -5,6 +5,8 @@
 #include "Pion.h"
 #include "Fou.h"
 #include "Roi.h"
+#include "cavalier.h"
+#include "Reine.h"
 
 using namespace std;
 
@@ -27,15 +29,19 @@ Plateau::Plateau()
 	echiquier[0][7] = new Tour(Blanc, 7, 0);	 /*Tour blanche*/
 	echiquier[7][0] = new Tour(Noir, 0, 7);	 /*Tour noir */
 	echiquier[7][7] = new Tour(Noir, 7, 7);	 /*Tour noir*/
-	echiquier[0][2] = new Fou(Blanc, 2, 0);	
+	echiquier[0][2] = new Fou(Blanc, 2, 0);
 	echiquier[0][5] = new Fou(Blanc, 5, 0);
 	echiquier[7][2] = new Fou(Noir, 2, 7);
 	echiquier[7][5] = new Fou(Noir, 5, 7);
 	echiquier[0][3] = new Reine(Blanc, 3, 0);
 	echiquier[7][3] = new Reine(Noir, 3, 7);
 	echiquier[0][4] = new Roi(Blanc, 4, 0);
-	echiquier[7][4] = new Roi(Noir, 4, 7)
-	
+	echiquier[7][4] = new Roi(Noir, 4, 7);
+	echiquier[0][1] = new Cavalier(Blanc, 1, 0);
+	echiquier[0][6] = new Cavalier(Blanc, 6, 0);
+	echiquier[7][1] = new Cavalier(Noir, 1, 7);
+	echiquier[7][6] = new Cavalier(Noir, 6, 7);
+
 
 	for (int x = 0; x < 8; x++)
 	{

@@ -1,12 +1,10 @@
 #pragma once
 #include "Piece.h"
-class Fou :
-	virtual public Piece
+
+class Cavalier : public Piece // heritage
 {
 public:
-	Fou(Couleur C, int x, int y);
+	Cavalier(Couleur C, int x, int y);
 	char getChar();
 	bool mouvementValide(int abscisse, int ordonnee);
-	
 };
-
