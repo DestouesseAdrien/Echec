@@ -33,6 +33,8 @@ Plateau::Plateau()
 	echiquier[7][5] = new Fou(Noir, 5, 7);
 	echiquier[0][3] = new Reine(Blanc, 3, 0);
 	echiquier[7][3] = new Reine(Noir, 3, 7);
+	echiquier[0][4] = new Roi(Blanc, 4, 0);
+	echiquier[7][4] = new Roi(Noir, 4, 7)
 	
 
 	for (int x = 0; x < 8; x++)
